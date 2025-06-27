@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.module.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <title>Trabalho de Aplicação web e moveis</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="containerButton">
+          <div class="buttonsLink">
+            <a href="/src/component/AboutMe/index.html" class="button">Sobre mim</a>
+          </div>
+          <div class="buttonsLink">
+            <a href="/src/component/Training/index.html" class="button">Formação</a>
+          </div>
+          <div class="buttonsLink">
+            <a href="/src/component/Portifolio/index.html" class="button">Portifólio</a>
+          </div>
+          <div class="buttonsLink">
+            <a href="javascript:void(0);" class="button" onclick="openPopup()">Contato</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="portfolioContent">
+      <section class="introSection">
+        <h1>Meu Portfólio</h1>
+        <p>
+          Seja bem-vindo(a)! Aqui você vai conhecer um pouco da minha trajetória
+          profissional e os projetos que desenvolvi. Preparei este material para
+          destacar o que já construí, com espaços reservados para que eu possa
+          adicionar imagens e capturas que complementam cada trabalho.
+        </p>
+      </section>
+
+      <section class="experienceSection">
+        <h2>Protmar Engenharia de Segurança Industrial (Junho 2024 – Junho 2025)</h2>
+        <p>
+          Na Protmar, atuei como Desenvolvedor de Sistemas, focado em projetos
+          que melhoram a segurança industrial. Liderei o desenvolvimento do
+          sistema PGR (Programa de Gerenciamento de Riscos), além dos sites NR12
+          Software e Controle de Terceiros.
+        </p>
+        <div class="imagesPlaceholder">
+          <img src="../../public/controleTerceiros.jpeg" alt="" />
+          <img src="../../public/nr12Software.jpeg" alt="" />
+        </div>
+        <div class="imagesPlaceholder">
+          <img src="../../public/pgrSoftware.jpeg" alt="" />
+        </div>
+
+        <h2>Accion Sistemas (A partir de Junho 2025)</h2>
+        <p>
+          Na Accion Sistemas, trabalho na equipe que desenvolve a integração de
+          IA nos sistemas ERP, automatizando processos e oferecendo novas
+          soluções aos clientes.
+        </p><br>
+
+        <h2>March Automação Industrial (Março 2024 – Junho 2024)</h2>
+        <p>
+          Na March, atuei como estagiário programando CLPs e colaborando em
+          projetos que exigiam trabalho em equipe e qualidade técnica.
+        </p><br>
+
+
+        <h2>NCS Sistemas Inteligentes (Abril 2023 – Março 2024)</h2>
+        <p>
+          Na NCS, iniciei como estagiário no setor de Gestão de Projetos, com
+          suporte técnico, tratamento de dados em PostgreSQL e integração entre
+          clientes e sistemas.
+        </p><br>
+
+        <h2>SP Engenharia Civil</h2>
+        <p>
+          Desenvolvi o site institucional da SP Engenharia Civil, com design
+          profissional e responsivo.
+        </p>
+        <div class="imagesPlaceholder">
+          <img src="../../public/spEngenharia.jpeg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <!-- POP-UP -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <p>
+      Se gostou do que viu aqui, fico à disposição para novos desafios e
+      oportunidades. Sou apaixonado por programação e tecnologia, e busco
+      sempre entregar qualidade em cada detalhe.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:lucasbarabasz@icloud.com" class="contact-item" target="_blank">
+        📧 lucasbarabasz@icloud.com
+      </a>
+      <a href="tel:+5544991096525" class="contact-item">
+        📞 (44) 99109-6525
+      </a>
+      <br>
+    </div>
+
+    <button onclick="closePopup()">Fechar</button>
+  </div>
+</div>
+
+    <!-- JS -->
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

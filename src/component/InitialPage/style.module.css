@@ -1,0 +1,104 @@
+body {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+
+
+/* Estilização do título */
+.containerTitle {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilização do texto de apresentação */
+.apresentation p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .containerButton {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .buttonsLink {
+        width: 120px;
+        height: 40px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .apresentation p {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .containerButton {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonsLink {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.module.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <title>Trabalho de Aplicação web e moveis</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="containerButton">
+          <div class="buttonsLink">
+            <a href="/src/component/AboutMe/index.html" class="button"
+              >Sobre mim</a
+            >
+          </div>
+          <div class="buttonsLink">
+            <a href="/src/component/Training/index.html" class="button"
+              >Formação</a
+            >
+          </div>
+          <div class="buttonsLink">
+            <a href="/src/component/Portifolio/index.html" class="button"
+              >Portifólio</a
+            >
+          </div>
+          <div class="buttonsLink">
+            <a href="javascript:void(0);" class="button" onclick="openPopup()">Contato</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="containerTitle">
+      <div class="title">
+        <h1>Formação</h1>
+      </div>
+      <div class="apresentation">
+        <p>
+          Atualmente estou cursando Engenharia de Software na Uninter
+          (2025-2028) e iniciei minha graduação em Engenharia da Computação na
+          FEITEP (2022-2026), que acabei transferindo para seguir com mais foco
+          em programação e sistemas. Essas experiências acadêmicas, junto com os
+          projetos que já desenvolvi profissionalmente, me deram uma base sólida
+          em lógica, linguagens e ferramentas que uso no dia a dia, como
+          JavaScript, TypeScript, React.js, Next.js, Node.js e PostgreSQL. Minha
+          meta é continuar aprendendo e crescendo na área, aplicando o que sei
+          para resolver problemas reais e contribuir para projetos que façam a
+          diferença.
+        </p>
+      </div>
+    </div>
+        <!-- POP-UP -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <p>
+      Se gostou do que viu aqui, fico à disposição para novos desafios e
+      oportunidades. Sou apaixonado por programação e tecnologia, e busco
+      sempre entregar qualidade em cada detalhe.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:lucasbarabasz@icloud.com" class="contact-item" target="_blank">
+        📧 lucasbarabasz@icloud.com
+      </a>
+      <a href="tel:+5544991096525" class="contact-item">
+        📞 (44) 99109-6525
+      </a>
+      <br>
+    </div>
+
+    <button onclick="closePopup()">Fechar</button>
+  </div>
+</div>
+
+    <!-- JS -->
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
